@@ -30,8 +30,8 @@ from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
 
 # ============ KONFIGURASI (ISI INI) ============
-TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+TELEGRAM_BOT_TOKEN = "8960282235:AAGl4R4VBC7MldGTiH423FEoPKC22pDhUdY"
+TELEGRAM_CHAT_ID = "8180429766"
 
 # Jam pengiriman ringkasan berita harian (format 24 jam, waktu lokal server/PC Anda)
 DAILY_SUMMARY_TIME = "07:00"
