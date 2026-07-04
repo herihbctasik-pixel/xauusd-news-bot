@@ -146,12 +146,8 @@ def main():
     print("XAUUSD News Alert Bot berjalan...")
     send_telegram("✅ Bot alert XAUUSD aktif dan siap mengirim update berita.")
 
-    schedule.every().day.at(DAILY_SUMMARY_TIME).do(send_daily_summary)
-    schedule.every(10).minutes.do(check_upcoming_reminders)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(30)
+    send_daily_summary()
+    check_upcoming_reminders()
 
 
 if __name__ == "__main__":
